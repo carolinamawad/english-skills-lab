@@ -1,80 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reading Skills</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reading Skills</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-
-<body>
-
-<header>
-    <h1>Reading Skills</h1>
-    <p>Develop comprehension, critical thinking, and teaching confidence.</p>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="grammar.html">Grammar</a>
-        <a href="vocabulary.html">Vocabulary</a>
-        <a href="reading.html" class="active">Reading</a>
-        <a href="test.html">Test</a>
-    </nav>
-</header>
-
-<section class="container">
-
-    <h2 class="section-title">Why Reading Matters for Future English Teachers</h2>
-
-    <div class="card big-card">
-        <p>
-            Reading is a gateway to knowledge, culture, and communication. For future English teachers,
-            strong reading skills are essential because they allow educators to access academic texts,
-            understand diverse perspectives, and model effective comprehension strategies.
-        </p>
-
-        <p>
-            Developing reading habits makes teachers confident and resourceful. Here are some tips:
-        </p>
-
-        <ul>
-            <li>📘 Read regularly – mix academic, literary & everyday texts.</li>
-            <li>📝 Highlight and take notes to reinforce understanding.</li>
-            <li>📚 Explore different genres.</li>
-            <li>✍️ Write summaries to strengthen comprehension.</li>
-            <li>💬 Discuss readings to deepen interpretation.</li>
-        </ul>
+<body class="bg-gray-100 text-gray-900 p-6">
+  <div class="max-w-5xl mx-auto bg-white p-10 rounded-2xl shadow-lg">
+    <!-- HEADER -->
+    <div class="flex items-center justify-between mb-8">
+      <h1 class="text-4xl font-bold text-indigo-600">Reading Skills</h1>
+      <a href="index.html" class="px-4 py-2 rounded-xl bg-indigo-500 text-white hover:bg-indigo-600 transition">Home</a>
     </div>
 
-    <h2 class="section-title">Recommended Books to Improve Your Reading</h2>
+    <!-- INTRO -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4 text-gray-800">Why Reading Matters for Future English Teachers</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Reading is a gateway to knowledge, culture, and communication. For future English teachers,
+        strong reading skills are essential because they allow educators to access academic texts,
+        understand diverse perspectives, and model effective comprehension strategies for their students.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Reading also develops critical thinking, enriches vocabulary, and strengthens grammar awareness,
+        making it a cornerstone of language learning.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        To teach reading effectively, teachers must cultivate personal reading habits that make them
+        confident, resourceful, and inspiring in the classroom. Here are some tips:
+      </p>
 
-    <div class="grid">
+      <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+        <li>Read regularly in English – mix academic, literary, and everyday texts.</li>
+        <li>Practice active reading – highlight, annotate, and question.</li>
+        <li>Explore different genres – novels, articles, essays, reports.</li>
+        <li>Summaries help reinforce comprehension.</li>
+        <li>Discuss readings to deepen understanding.</li>
+      </ul>
+    </section>
 
-        <div class="card">
-            <h3>Charlotte’s Web – E.B. White</h3>
-            <p>A classic with simple, rich language—great for building reading confidence.</p>
-            <a class="btn" href="https://cleveracademy.vn/wp-content/uploads/2016/10/Charlotte_s_Web_.pdf" target="_blank">Read PDF</a>
-        </div>
+    <!-- RECOMMENDED BOOKS -->
+    <h2 class="text-2xl font-semibold mb-6 text-indigo-600">Recommended Books</h2>
 
-        <div class="card">
-            <h3>The Curious Incident of the Dog in the Night-Time – Mark Haddon</h3>
-            <p>Clear, modern English. Perfect for intermediate learners.</p>
-            <a class="btn" href="https://coamed.pbworks.com/f/the-curious-incident-of-the-dog-in-the-nightime.pdf" target="_blank">Read PDF</a>
-        </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      <div class="p-6 bg-indigo-50 rounded-xl shadow hover:shadow-md transition">
+        <h3 class="text-lg font-semibold mb-2">Charlotte’s Web – E.B. White</h3>
+        <p class="text-gray-700 mb-3">Simple, rich language. Great for beginner comprehension.</p>
+        <a href="https://cleveracademy.vn/wp-content/uploads/2016/10/Charlotte_s_Web_.pdf" target="_blank" class="text-indigo-600 font-medium">📘 Read PDF</a>
+      </div>
 
-        <div class="card">
-            <h3>Harry Potter and the Philosopher’s Stone – J.K. Rowling</h3>
-            <p>Engaging vocabulary in context—excellent for immersive reading.</p>
-            <a class="btn" href="https://kvongcmehsanalibrary.wordpress.com/wp-content/uploads/2021/07/harrypotter.pdf" target="_blank">Read PDF</a>
-        </div>
+      <div class="p-6 bg-indigo-50 rounded-xl shadow hover:shadow-md transition">
+        <h3 class="text-lg font-semibold mb-2">The Curious Incident of the Dog in the Night-Time</h3>
+        <p class="text-gray-700 mb-3">Modern English, engaging, great for intermediate readers.</p>
+        <a href="https://coamed.pbworks.com/f/the-curious-incident-of-the-dog-in-the-nightime.pdf" target="_blank" class="text-indigo-600 font-medium">📗 Read PDF</a>
+      </div>
 
-        <div class="card">
-            <h3>The Old Man and the Sea – Ernest Hemingway</h3>
-            <p>Short, powerful sentences. Ideal for practicing fluency.</p>
-            <a class="btn" href="https://www.arvindguptatoys.com/arvindgupta/oldmansea.pdf" target="_blank">Read PDF</a>
-        </div>
+      <div class="p-6 bg-indigo-50 rounded-xl shadow hover:shadow-md transition">
+        <h3 class="text-lg font-semibold mb-2">Harry Potter and the Philosopher’s Stone</h3>
+        <p class="text-gray-700 mb-3">Accessible vocabulary, great for contextual learning.</p>
+        <a href="https://kvongcmehsanalibrary.wordpress.com/wp-content/uploads/2021/07/harrypotter.pdf" target="_blank" class="text-indigo-600 font-medium">🪄 Read PDF</a>
+      </div>
 
-        <div class="card">
-            <h3>One Day – David Nicholls</h3>
-            <p>Contemporary vocabulary for real-life comprehension.</p>
-            <a class="btn" href="https://cdn.bookey.app/files/pdf/book/en/one-day.pdf" targe
+      <div class="p-6 bg-indigo-50 rounded-xl shadow hover:shadow-md transition">
+        <h3 class="text-lg font-semibold mb-2">The Old Man and the Sea – Ernest Hemingway</h3>
+        <p class="text-gray-700 mb-3">Short, direct sentences. Perfect for fluency practice.</p>
+        <a href="https://www.arvindguptatoys.com/arvindgupta/oldmansea.pdf" target="_blank" class="text-indigo-600 font-medium">🌊 Read PDF</a>
+      </div>
+
+      <div class="p-6 bg-indigo-50 rounded-xl shadow hover:shadow-md transition">
+        <h3 class="text-lg font-semibold mb-2">One Day – David Nicholls</h3>
+        <p class="text-gray-700 mb-3">Contemporary novel with real-life vocabulary.</p>
+        <a href="https://cdn.bookey.app/files/pdf/book/en/one-day.pdf" target="_blank" class="text-indigo-600 font-medium">📖 Read PDF</a>
+      </div>
+    </div>
+
+    <!-- RETURN HOME -->
+    <div class="text-center mt-10">
+      <a href="index.html" class="px-6 py-3 bg-indigo-500 text-white rounded-xl shadow hover:bg-indigo-600 transition">⬅ Return Home</a>
+    </div>
+  </div>
+</body>
+</html>
+
