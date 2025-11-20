@@ -1,205 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>English Level Test</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f8ff;
-            margin: 0;
-            padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #2b4eff;
-            margin-bottom: 25px;
-        }
-
-        .test-container {
-            max-width: 750px;
-            margin: auto;
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-        }
-
-        .question {
-            margin-bottom: 20px;
-        }
-
-        button {
-            background: #2b4eff;
-            color: white;
-            padding: 12px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background: #153fd4;
-        }
-
-        #result {
-            margin-top: 25px;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 15px;
-            border-radius: 10px;
-            background: #eef1ff;
-        }
-
-        .home-btn {
-            display: inline-block;
-            margin-top: 20px;
-            background: #2b4eff;
-            padding: 12px 20px;
-            border-radius: 8px;
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        .home-btn:hover {
-            background: #153fd4;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Level Test</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>English Skills Test</h1>
+<header>
+<h1>English Level Test</h1>
+</header>
 
-    <div class="test-container">
+<section class="container">
+<h2>Welcome to the English Level Test</h2>
+<p>
+In this test, we will evaluate your English proficiency, focusing on grammar, reading comprehension, and interpretation of more advanced texts.  
+Please read each question carefully and answer to the best of your ability.  
+Good luck!
+</p>
 
-        <form id="testForm">
+<form id="quizForm">
 
-            <!-- 10 QUESTIONS -->
-            <div class="question">
-                <p>1. Choose the correct form: “She ____ to school every day.”</p>
-                <label><input type="radio" name="q1" value="b"> goes</label><br>
-                <label><input type="radio" name="q1" value="a"> go</label><br>
-                <label><input type="radio" name="q1" value="c"> going</label>
-            </div>
+<h3>Grammar & Vocabulary</h3>
 
-            <div class="question">
-                <p>2. What is the synonym of “difficult”?</p>
-                <label><input type="radio" name="q2" value="a"> hard</label><br>
-                <label><input type="radio" name="q2" value="b"> easy</label><br>
-                <label><input type="radio" name="q2" value="c"> small</label>
-            </div>
+<p><b>1. Choose the correct sentence:</b></p>
+<label><input type="radio" name="q1" value="0"> She suggested me to take the course.</label><br>
+<label><input type="radio" name="q1" value="1"> She suggested that I take the course.</label><br>
+<label><input type="radio" name="q1" value="0"> She suggested me taking the course.</label><br>
 
-            <div class="question">
-                <p>3. Choose the correct option: “I have lived here ____ 5 years.”</p>
-                <label><input type="radio" name="q3" value="b"> for</label><br>
-                <label><input type="radio" name="q3" value="a"> since</label><br>
-                <label><input type="radio" name="q3" value="c"> from</label>
-            </div>
+<p><b>2. Which option completes the sentence?</b><br>
+"If I ______ earlier, I wouldn’t have missed the meeting."</p>
+<label><input type="radio" name="q2" value="1"> had left</label><br>
+<label><input type="radio" name="q2" value="0"> left</label><br>
+<label><input type="radio" name="q2" value="0"> would leave</label><br>
 
-            <div class="question">
-                <p>4. Select the correct sentence:</p>
-                <label><input type="radio" name="q4" value="b"> He doesn’t like tea.</label><br>
-                <label><input type="radio" name="q4" value="a"> He don’t like tea.</label><br>
-                <label><input type="radio" name="q4" value="c"> He don’t likes tea.</label>
-            </div>
 
-            <div class="question">
-                <p>5. What does “improve” mean?</p>
-                <label><input type="radio" name="q5" value="a"> to make something better</label><br>
-                <label><input type="radio" name="q5" value="b"> to make something worse</label><br>
-                <label><input type="radio" name="q5" value="c"> to delete something</label>
-            </div>
+<hr>
 
-            <div class="question">
-                <p>6. Choose the word that best completes the sentence: “Can you help me ____ this?”</p>
-                <label><input type="radio" name="q6" value="a"> with</label><br>
-                <label><input type="radio" name="q6" value="b"> to</label><br>
-                <label><input type="radio" name="q6" value="c"> on</label>
-            </div>
+<h3>Reading Passage 1 – Formal Email</h3>
 
-            <div class="question">
-                <p>7. Choose the correct option: “The test was easier ____ I expected.”</p>
-                <label><input type="radio" name="q7" value="a"> than</label><br>
-                <label><input type="radio" name="q7" value="b"> then</label><br>
-                <label><input type="radio" name="q7" value="c"> that</label>
-            </div>
+<p>
+<i>
+Dear Training Coordinator,<br><br>
+I am writing to express my interest in participating in the international teaching workshop scheduled for next month.  
+Over the past few years, I have worked with diverse student groups, and I believe that attending this event would greatly enhance my ability to design more inclusive lesson plans.  
+However, before confirming my attendance, I would like to request further details regarding accommodation and transportation, as these aspects will help me determine the total estimated cost of the trip.<br><br>
+Thank you in advance for your assistance. I look forward to your response.<br>
+Kind regards,  
+Laura Santos
+</i>
+</p>
 
-            <div class="question">
-                <p>8. What is the opposite of “noisy”?</p>
-                <label><input type="radio" name="q8" value="b"> quiet</label><br>
-                <label><input type="radio" name="q8" value="a"> loud</label><br>
-                <label><input type="radio" name="q8" value="c"> heavy</label>
-            </div>
+<p><b>3. What is the purpose of Laura's message?</b></p>
+<label><input type="radio" name="q3" value="1"> To request additional information before confirming attendance.</label><br>
+<label><input type="radio" name="q3" value="0"> To cancel her participation in the workshop.</label><br>
+<label><input type="radio" name="q3" value="0"> To complain about the workshop conditions.</label><br>
 
-            <div class="question">
-                <p>9. Choose the correct option: “If I ____ time, I will help you.”</p>
-                <label><input type="radio" name="q9" value="a"> have</label><br>
-                <label><input type="radio" name="q9" value="b"> had</label><br>
-                <label><input type="radio" name="q9" value="c"> will have</label>
-            </div>
+<p><b>4. Why does she need more information?</b></p>
+<label><input type="radio" name="q4" value="0"> She does not know if the workshop is free.</label><br>
+<label><input type="radio" name="q4" value="1"> She needs info on accommodation and transportation costs.</label><br>
+<label><input type="radio" name="q4" value="0"> She wants to change the workshop dates.</label><br>
 
-            <div class="question">
-                <p>10. What is the correct definition of “schedule”?</p>
-                <label><input type="radio" name="q10" value="a"> a list of planned events or tasks</label><br>
-                <label><input type="radio" name="q10" value="b"> a type of food</label><br>
-                <label><input type="radio" name="q10" value="c"> a problem or issue</label>
-            </div>
+<p><b>5. What does the letter suggest about her professional background?</b></p>
+<label><input type="radio" name="q5" value="1"> She has experience with diverse groups of students.</label><br>
+<label><input type="radio" name="q5" value="0"> She recently started her teaching career.</label><br>
+<label><input type="radio" name="q5" value="0"> She only teaches advanced-level learners.</label><br>
 
-            <button type="button" onclick="gradeTest()">Submit</button>
-        </form>
 
-        <div id="result"></div>
+<hr>
 
-    </div>
+<h3>Reading Passage 2 – Fiction / Novel Style</h3>
 
-    <script>
-        function gradeTest() {
-            const answers = {
-                q1: "b",
-                q2: "a",
-                q3: "b",
-                q4: "b",
-                q5: "a",
-                q6: "a",
-                q7: "a",
-                q8: "b",
-                q9: "a",
-                q10: "a"
-            };
+<p>
+<i>
+As Emma walked through the old library, she couldn’t help noticing that the silence felt heavier than usual.  
+Dust floated in the afternoon light like tiny golden sparks, and the familiar smell of aging paper surrounded her.  
+She had come looking for a manuscript her mentor had mentioned—a document rumored to contain the earliest draft of a forgotten novel.  
+But as she reached the back of the library, she realized the drawer where it was supposed to be kept had been left slightly open, and the manuscript was nowhere to be found.
+</i>
+</p>
 
-            let score = 0;
+<p><b>6. Why did Emma visit the library?</b></p>
+<label><input type="radio" name="q6" value="1"> To find a manuscript her mentor told her about.</label><br>
+<label><input type="radio" name="q6" value="0"> To meet a friend.</label><br>
+<label><input type="radio" name="q6" value="0"> To return borrowed books.</label><br>
 
-            for (let q in answers) {
-                const selected = document.querySelector(`input[name="${q}"]:checked`);
-                if (selected && selected.value === answers[q]) {
-                    score++;
-                }
-            }
+<p><b>7. What does the atmosphere in the library suggest?</b></p>
+<label><input type="radio" name="q7" value="1"> A mysterious and tense environment.</label><br>
+<label><input type="radio" name="q7" value="0"> A cheerful and busy place.</label><br>
+<label><input type="radio" name="q7" value="0"> A modern and noisy setting.</label><br>
 
-            let feedback = "";
+<p><b>8. What can be inferred from the open drawer?</b></p>
+<label><input type="radio" name="q8" value="1"> Someone might have taken the manuscript.</label><br>
+<label><input type="radio" name="q8" value="0"> Emma forgot to close it the last time she visited.</label><br>
+<label><input type="radio" name="q8" value="0"> The library is being renovated.</label><br>
 
-            if (score <= 4) {
-                feedback = "You are in A2–B1. You need to practice more grammar and reading.";
-            } else if (score <= 7) {
-                feedback = "You are in a solid B1 level. Keep improving your vocabulary and sentence structure.";
-            } else {
-                feedback = "Great! You are B2 or higher. You have strong grammar and vocabulary skills.";
-            }
 
-            document.getElementById("result").innerHTML = `
-                Your score: ${score}/10 <br><br> 
-                ${feedback} <br><br>
+<hr>
 
-                <a href="index.html" class="home-btn">⬅ Back to Home</a>
-            `;
-        }
-    </script>
+<h3>Reading Passage 3 – Academic-Style Article</h3>
 
+<p>
+<i>
+Recent research on language learning motivation suggests that students perform significantly better when they perceive tasks as meaningful.  
+According to a 2023 study from the University of Bristol, learners who feel emotionally connected to the content they study tend to retain vocabulary at nearly double the rate of those who focus solely on memorization techniques.  
+These findings highlight the importance of designing classroom activities that relate to students’ experiences, interests, and long-term goals.
+</i>
+</p>
+
+<p><b>9. What is the main finding of the study?</b></p>
+<label><input type="radio" name="q9" value="1"> Students retain more vocabulary when content is meaningful.</label><br>
+<label><input type="radio" name="q9" value="0"> Memorization is the best learning strategy.</label><br>
+<label><input type="radio" name="q9" value="0"> Students learn faster in short lessons.</label><br>
+
+<p><b>10. What does the article imply for teachers?</b></p>
+<label><input type="radio" name="q10" value="1"> They should design activities connected to students’ real experiences.</label><br>
+<label><input type="radio" name="q10" value="0"> They should assign more memorization drills.</label><br>
+<label><input type="radio" name="q10" value="0"> They should avoid emotional topics in class.</label><br>
+
+<br>
+<button type="button" onclick="calculateScore()">Submit Test</button>
+</form>
+
+<p id="result"></p>
+
+<a href="index.html" class="btn">Return Home</a>
+
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
