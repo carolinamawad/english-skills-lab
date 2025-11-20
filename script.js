@@ -1,20 +1,24 @@
-function scrollToSection() {
-document.getElementById('activities').scrollIntoView({ behavior: 'smooth' });
-}
+function calculateScore() {
+    let score = 0;
+    const total = 10;
 
+    for (let i = 1; i <= total; i++) {
+        const answer = document.querySelector(`input[name="q${i}"]:checked`);
+        if (answer) score += parseInt(answer.value);
+    }
 
-// Example quiz functionality
-function checkAnswer(question, correctOption) {
-const selected = document.querySelector(`input[name="${question}"]:checked`);
-if (!selected) {
-alert("Please select an answer.");
-return;
-}
+    let message = "";
 
+    if (score <= 4) {
+        message = "Your level seems to be around A2–B1. You’re making progress, and with a bit more practice in grammar and reading, you will improve quickly. Keep going—you’re on the right path!";
+    } 
+    else if (score <= 7) {
+        message = "Your results suggest you are around a solid B1. You understand the main ideas of texts, but continuing to practice complex reading will help you reach B2 confidently.";
+    } 
+    else {
+        message = "Great job! You are performing at a B2 level. You handle detailed texts well and show strong comprehension. Keep sharpening your skills—you’re close to C1 territory!";
+    }
 
-if (selected.value === correctOption) {
-alert("Correct! Great job.");
-} else {
-alert("Try again!");
-}
+    document.getElementById("result").innerHTML = 
+        `<strong>Your score: ${score}/${total}</strong><br>${message}`;
 }
