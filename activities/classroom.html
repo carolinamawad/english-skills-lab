@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Classroom English</title>
+
+  <!-- Fuente -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: #f4f6fb;
+      background: #eef2ff;
       margin: 0;
       padding: 0;
       display: flex;
@@ -22,142 +25,215 @@
       margin: 40px 0;
       padding: 40px 50px;
       border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
 
     h1 {
-      font-size: 2.3rem;
-      font-weight: 600;
-      color: #2a2a2a;
+      font-size: 2.4rem;
       margin-bottom: 10px;
+      color: #1e1b4b;
+      font-weight: 600;
+      text-align: center;
     }
 
     h2 {
-      color: #3b3b3b;
-      font-size: 1.5rem;
-      margin-top: 35px;
+      margin-top: 40px;
+      font-size: 1.7rem;
+      color: #312e81;
+    }
+
+    h3 {
+      color: #4338ca;
+      margin-bottom: 8px;
     }
 
     p, li {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      color: #555;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #444;
     }
 
     ul {
-      margin-top: 10px;
       padding-left: 25px;
     }
 
-    .section-box {
+    /* Cards estilo Vocabulary */
+    .card {
       background: #f8faff;
-      border-left: 5px solid #4f46e5;
-      padding: 18px 22px;
-      border-radius: 10px;
-      margin-top: 18px;
+      border-radius: 18px;
+      padding: 20px 25px;
+      margin-top: 22px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      border-left: 6px solid #4f46e5;
     }
 
-    .home-btn {
-      display: inline-block;
-      margin-top: 35px;
-      padding: 12px 22px;
+    .icon {
+      width: 32px;
+      height: 32px;
+      flex-shrink: 0;
+      opacity: 0.8;
+    }
+
+    /* Botón de recursos */
+    .resource-btn {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      text-align: center;
       background: #4f46e5;
       color: white;
       text-decoration: none;
-      border-radius: 10px;
+      font-weight: 600;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .resource-btn:hover {
+      background: #3730a3;
+    }
+
+    /* Botón Home */
+    .home-btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 14px 26px;
+      background: #4338ca;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
       font-weight: 600;
       transition: 0.3s;
     }
 
     .home-btn:hover {
-      background: #3730a3;
+      background: #312e81;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
+
     <h1>Classroom English</h1>
+
     <p>
-      As future English teachers, it is essential to develop confidence in using English naturally in the classroom.
-      <strong>Classroom English</strong> provides the tools to manage lessons, give instructions, and interact with students effectively.
-      This section offers tips and best practices to help teachers create an immersive environment where English is the main language of communication.
+      As future English teachers, it is essential to feel confident using English naturally in the classroom.
+      <strong>Classroom English</strong> helps you manage lessons, give instructions, and interact with students effectively.
+      These tips and examples will help you create an immersive environment where English is the main language of communication.
     </p>
 
+    <!-- 🟣 CARDS CON ICONOS -->
     <h2>Tips and Best Practices</h2>
 
-    <div class="section-box">
-      <h3>Start with clear routines</h3>
-      <ul>
-        <li>"Good morning, everyone. Let’s get started."</li>
-        <li>"That’s all for today. See you next class."</li>
-      </ul>
+    <div class="card">
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/992/992700.png">
+      <div>
+        <h3>Start with clear routines</h3>
+        <ul>
+          <li>"Good morning, everyone. Let’s get started."</li>
+          <li>"That's all for today. See you next class."</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="section-box">
-      <h3>Give instructions step by step</h3>
-      <ul>
-        <li>"Open your books to page 10."</li>
-        <li>"Work in pairs. Ask and answer the questions."</li>
-      </ul>
+    <div class="card">
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1827/1827951.png">
+      <div>
+        <h3>Give instructions step by step</h3>
+        <ul>
+          <li>"Open your books to page 10."</li>
+          <li>"Work in pairs. Ask and answer the questions."</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="section-box">
-      <h3>Encourage participation</h3>
-      <ul>
-        <li>"Excellent answer!"</li>
-        <li>"Who would like to try?"</li>
-      </ul>
+    <div class="card">
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png">
+      <div>
+        <h3>Encourage participation</h3>
+        <ul>
+          <li>"Excellent answer!"</li>
+          <li>"Who would like to try?"</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="section-box">
-      <h3>Manage classroom behavior politely</h3>
-      <ul>
-        <li>"Please raise your hand before speaking."</li>
-        <li>"Let’s stay focused on the activity."</li>
-      </ul>
+    <div class="card">
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2883/2883849.png">
+      <div>
+        <h3>Manage classroom behavior politely</h3>
+        <ul>
+          <li>"Please raise your hand before speaking."</li>
+          <li>"Let's stay focused on the activity."</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="section-box">
-      <h3>Check understanding</h3>
-      <ul>
-        <li>"Can you repeat the instructions in your own words?"</li>
-        <li>"Do you understand what to do?"</li>
-      </ul>
+    <div class="card">
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2917/2917995.png">
+      <div>
+        <h3>Check understanding</h3>
+        <ul>
+          <li>"Can you repeat the instructions in your own words?"</li>
+          <li>"Do you understand what to do?"</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="section-box">
-      <h3>Promote English immersion</h3>
-      <ul>
-        <li>"May I go to the bathroom?"</li>
-        <li>"Can you help me, please?"</li>
-      </ul>
+    <div class="card">
+      <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png">
+      <div>
+        <h3>Promote English immersion</h3>
+        <ul>
+          <li>"May I go to the bathroom?"</li>
+          <li>"Can you help me, please?"</li>
+        </ul>
+      </div>
     </div>
 
+    <!-- 🟣 Recursos con botones -->
     <h2>Resources</h2>
 
     <h3>Phrase Lists</h3>
-    <ul>
-      <li>7ESL – 300+ Classroom English Phrases</li>
-      <li>Morocco English – Useful Classroom Language PDF</li>
-      <li>LoveEnglish – Classroom Language Expressions</li>
-    </ul>
+    <a class="resource-btn" href="https://7esl.com/classroom-english-teachers/" target="_blank">
+      📘 7ESL – Classroom English Phrases
+    </a>
+
+    <a class="resource-btn" href="https://moroccoenglish.com/me-md/2017/09/useful-classroom-language-and-expressions.pdf" target="_blank">
+      📄 Morocco English – Classroom Language PDF
+    </a>
+
+    <a class="resource-btn" href="https://loveenglish.org/classroom-language/" target="_blank">
+      📗 LoveEnglish – Classroom Language Expressions
+    </a>
 
     <h3>Videos</h3>
-    <ul>
-      <li>Classroom English Phrases – Classroom English for Teachers (YouTube)</li>
-      <li>Daily Use English in School for Teachers (YouTube)</li>
-      <li>How to Talk in English with Students in Classroom (YouTube)</li>
-    </ul>
+    <a class="resource-btn" href="https://www.youtube.com/watch?v=aHucJfwRIe4" target="_blank">
+      ▶ Classroom English Phrases (YouTube)
+    </a>
+
+    <a class="resource-btn" href="https://www.youtube.com/watch?v=2GiFDkl0UDw" target="_blank">
+      ▶ Daily Use English in School (YouTube)
+    </a>
+
+    <a class="resource-btn" href="https://www.youtube.com/watch?v=K7mVl9eeb0E" target="_blank">
+      ▶ How to Talk in English with Students (YouTube)
+    </a>
 
     <h2>Practice Ideas</h2>
     <ul>
       <li>Role-play scenarios: teacher gives instructions, students respond in English.</li>
       <li>Peer feedback: practice phrases in pairs and correct each other.</li>
-      <li>Reflection journal: write down which phrases worked best in class.</li>
+      <li>Reflection journal: write which phrases worked best in class.</li>
     </ul>
 
+    <!-- Botón Home -->
     <a class="home-btn" href="index.html">Return Home</a>
+
   </div>
 </body>
 </html>
-
